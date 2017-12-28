@@ -2,7 +2,7 @@
 
 This tool uses the [Toggl Reports API](https://github.com/toggl/toggl_api_docs/blob/master/reports.md) to generate a status report that is broken down by User -> Client -> Project -> Tasks.
 
-It currently spits out the report in markdown to stdout.
+It currently spits out the report in markdown to stdout. See [example.md](example.md).
 
 ```
 usage: dotenv-run python run-report.py [-h] start end
