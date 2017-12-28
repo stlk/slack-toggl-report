@@ -1,6 +1,6 @@
 # Slack toggl report
 
-This tool uses the [Toggl Reports API](https://github.com/toggl/toggl_api_docs/blob/master/reports.md) to generate a status report that is broken down by User->Client->Project->Tasks.
+This tool uses the [Toggl Reports API](https://github.com/toggl/toggl_api_docs/blob/master/reports.md) to generate a status report that is broken down by User -> Client -> Project -> Tasks.
 
 It currently spits out the report in markdown to stdout.
 
@@ -15,17 +15,17 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 
-## Slack
+## Installation
 
-You can use `dotenv-run python slack-report.py` to post report to slack.
-
-## Requirements
-
-Python 3.5
+Python 3.5 or newer is required. This project uses [pipenv](https://docs.pipenv.org/). You can install it using `pip install pipenv`.
 
 ```
-pip install -r requirements.txt
+pipenv install
 ```
+
+## Usage
+
+You can use `pipenv run python slack-report.py` to post report to slack.
 
 ## Contributors
 
