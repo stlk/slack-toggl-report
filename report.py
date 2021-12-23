@@ -28,11 +28,11 @@ users =   Vividict()
 auth = (os.environ['TOGGL_AUTH_KEY'], 'api_token')
 
 headers = {'user-agent': 'report-generator'}
-url = 'https://www.toggl.com/api/v8/workspaces'
+url = 'https://api.track.toggl.com/api/v8/v8/workspaces'
 r = requests.get(url, auth=auth, headers=headers)
 workspace_id = r.json()[0]['id']
 
-url = 'https://toggl.com/reports/api/v2/details'
+url = 'https://api.track.toggl.com/reports/api/v2/details'
 
 page = 1
 total_pages = 1
